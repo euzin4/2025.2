@@ -1,1 +1,4 @@
 -dbeavear    //tipo o pgadmin
+
+-DISTINCT, elimina duplicatas no resultado do select:
+select distinct col_tabela from nome_tabela 
