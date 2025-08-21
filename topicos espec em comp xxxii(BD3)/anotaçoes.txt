@@ -2,3 +2,7 @@
 
 -DISTINCT, elimina duplicatas no resultado do select:
 select distinct col_tabela from nome_tabela 
+
+-o 'IN' funciona como um 'OR':
+SELECT * FROM clientes WHERE estado_civil IN (‘Solteiro’, ‘Divorciado’)
+
