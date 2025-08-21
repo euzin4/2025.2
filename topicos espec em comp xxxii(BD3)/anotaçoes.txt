@@ -6,3 +6,5 @@ select distinct col_tabela from nome_tabela
 -o 'IN' funciona como um 'OR':
 SELECT * FROM clientes WHERE estado_civil IN (‘Solteiro’, ‘Divorciado’)
 
+-o UNION funciona como um DISTINCT em questao de desempenho
+
