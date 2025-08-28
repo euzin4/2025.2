@@ -8,3 +8,6 @@ SELECT * FROM clientes WHERE estado_civil IN (‘Solteiro’, ‘Divorciado’)
 
 -o UNION funciona como um DISTINCT em questao de desempenho
 
+-ALL(retorna somente o filtrado e nao o resto) e ANY(retorna todos exceto o filtrado), usado com operadores >, >=, <, <=, <>, =
+
+-ORDER BY e GROUP BY
