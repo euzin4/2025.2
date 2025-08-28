@@ -11,3 +11,7 @@ SELECT * FROM clientes WHERE estado_civil IN (‘Solteiro’, ‘Divorciado’)
 -ALL(retorna somente o filtrado e nao o resto) e ANY(retorna todos exceto o filtrado), usado com operadores >, >=, <, <=, <>, =
 
 -ORDER BY e GROUP BY
+
+-EXISTS
+/* EX: buscar clientes que nunca fizeram locaçao */
+select * from clientes c where not exists (select * from locacoes l where l.cpf = c.cpf); /* retorna os clientes que nao possuem o cpf na tabela de locaçoes */
