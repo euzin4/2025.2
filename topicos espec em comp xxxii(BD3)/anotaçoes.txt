@@ -19,3 +19,5 @@ select * from clientes c where not exists (select * from locacoes l where l.cpf 
 -VIEW, deixa fixa a otimização da consulta cadastrada, mas como o banco é dinamico, são poucos os casos em que seu uso é recomendado:
 create view nome_view as CONSULTA;
 create view teste as select * from minha_tabela;
+
+-view materialized, pesquisar(importante), uso em questoes de segurança, diferente da view normal a view materializada salva o resultado da consulta em um lugar separado no banco(tipo um cache)
