@@ -15,3 +15,7 @@ SELECT * FROM clientes WHERE estado_civil IN (‘Solteiro’, ‘Divorciado’)
 -EXISTS
 /* EX: buscar clientes que nunca fizeram locaçao */
 select * from clientes c where not exists (select * from locacoes l where l.cpf = c.cpf); /* retorna os clientes que nao possuem o cpf na tabela de locaçoes */
+
+-VIEW, deixa fixa a otimização da consulta cadastrada, mas como o banco é dinamico, são poucos os casos em que seu uso é recomendado:
+create view nome_view as CONSULTA;
+create view teste as select * from minha_tabela;
