@@ -20,4 +20,6 @@ select * from clientes c where not exists (select * from locacoes l where l.cpf 
 create view nome_view as CONSULTA;
 create view teste as select * from minha_tabela;
 
--view materialized, pesquisar(importante), uso em questoes de segurança, diferente da view normal a view materializada salva o resultado da consulta em um lugar separado no banco(tipo um cache)
+-view materialized 'pesquisar(importante)', uso em questoes de segurança, diferente da view normal a view materializada salva o resultado da consulta em um lugar separado no banco(tipo um cache)
+
+-indices
