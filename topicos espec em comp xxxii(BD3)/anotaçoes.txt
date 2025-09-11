@@ -22,11 +22,13 @@ create view teste as select * from minha_tabela;
 
 -view materialized 'pesquisar(importante)', uso em questoes de segurança, diferente da view normal a view materializada salva o resultado da consulta em um lugar separado no banco(tipo um cache)
 
--indices
-
--coalesce: retorna o primeiro valor não nulo de uma lista
+-indices (index)
 
 -case
 
+-coalesce: retorna o primeiro valor não nulo de uma lista
+
 -concatenar string: usando pipe '||' e concat(), EX: 'exemplo'||valor||'de concatenaçao' , concat(val1,val2,...)
+
+-mostra quem está conectado ao banco e oque esta fazendo, 'select * from pg_stat_activity'
 
