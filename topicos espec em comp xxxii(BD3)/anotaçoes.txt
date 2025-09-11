@@ -29,6 +29,9 @@ create view teste as select * from minha_tabela;
 -coalesce: retorna o primeiro valor não nulo de uma lista
 
 -concatenar string: usando pipe '||' e concat(), EX: 'exemplo'||valor||'de concatenaçao' , concat(val1,val2,...)
+-substituir string: replace('abcdefgcdgh','cd','XX')=abXXefgXXgh
 
 -mostra quem está conectado ao banco e oque esta fazendo, 'select * from pg_stat_activity'
 
+-cte:(olhar os slides)
+ex: 
