@@ -23,3 +23,10 @@ create view teste as select * from minha_tabela;
 -view materialized 'pesquisar(importante)', uso em questoes de segurança, diferente da view normal a view materializada salva o resultado da consulta em um lugar separado no banco(tipo um cache)
 
 -indices
+
+-coalesce: retorna o primeiro valor não nulo de uma lista
+
+-case
+
+-concatenar string: usando pipe '||' e concat(), EX: 'exemplo'||valor||'de concatenaçao' , concat(val1,val2,...)
+
