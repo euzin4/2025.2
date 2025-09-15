@@ -33,5 +33,33 @@ create view teste as select * from minha_tabela;
 
 -mostra quem está conectado ao banco e oque esta fazendo, 'select * from pg_stat_activity'
 
--cte:(olhar os slides)
-ex: 
+-cte: É um conjunto de resultados temporário e nomeado que você pode referenciar em uma instrução SQL como SELECT, INSERT, UPDATE ou DELETE. Pense na CTE como uma tabela virtual, que só existe durante a execução de uma única consulta.
+sintaxe basica:
+WITH nome_da_cte (coluna1, coluna2, ...) AS (
+    -- A consulta que define o conjunto de resultados da CTE
+    SELECT coluna1, coluna2, ...
+    FROM tabela
+    WHERE ...
+)
+-- A consulta principal que usa a CTE
+SELECT *
+FROM nome_da_cte
+WHERE ...;
+
+exemplo: Imagine que você quer encontrar os 3 funcionários mais bem pagos em cada departamento.
+WITH ranked_salarios AS (
+    SELECT
+        nome_funcionario,
+        salario,
+        departamento,
+        ROW_NUMBER() OVER(PARTITION BY departamento ORDER BY salario DESC) AS rank
+    FROM funcionarios
+)
+SELECT
+    nome_funcionario,
+    salario,
+    departamento
+FROM ranked_salarios
+WHERE rank <= 3;
+
+-funçoes: também podem ser chamadas de procedures
