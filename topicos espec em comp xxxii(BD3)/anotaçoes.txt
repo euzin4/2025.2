@@ -62,4 +62,6 @@ SELECT
 FROM ranked_salarios
 WHERE rank <= 3;
 
+
 -funçoes: também podem ser chamadas de procedures
+
