@@ -1,8 +1,0 @@
-*fazer parte 3 e parte 4
-
-exercicio parte 3(slide aula2)
-
-1- Liste os nomes dos veículos e seus respectivos tipos (descrição do tipo):
-select v.nome, tv.descricao from veiculos v join tipos_veiculos tv on v.codtipo = tv.codtipo order by 1;
-
-2-Apresente o nome dos funcionários que fizeram locações no dia 17/02/2022:
