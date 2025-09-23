@@ -20,9 +20,9 @@ BEGIN
         v_estado_civil := estados_civis[1+ floor(random() * array_length(estados_civis, 1))::INT];
         v_num_filhos := floor(random() * 5)::INT;
         v_data_nasc := DATE '1950-01-01' + (trunc(random() * 20000)) * INTERVAL '1 day';
-        v_telefone := '(' || (10 + floor(random() * 89)):INT || ')' || (90000 + floor(random() * 9999)):INT;
+        v_telefone := '(' || (10 + floor(random() * 89))::INT || ')' || (90000 + floor(random() * 9999))::INT;
         
-        /*Codh ficticio(supondo que existam registros em habilitaçoes)*/
+        /*Codh fictício (supondo que existam registros em habilitacoes)*/
         SELECT codh INTO v_codh
         FROM public.habilitacoes
         ORDER BY random()
