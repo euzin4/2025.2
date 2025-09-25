@@ -1,3 +1,13 @@
+--remove os procedures
+DROP PROCEDURE IF EXISTS popular_banco(INTEGER, INTEGER, INTEGER, INTEGER);
+DROP PROCEDURE IF EXISTS gerar_clientes(INTEGER);
+DROP PROCEDURE IF EXISTS gerar_funcionarios(INTEGER);
+DROP PROCEDURE IF EXISTS gerar_veiculos(INTEGER);
+DROP PROCEDURE IF EXISTS gerar_locacoes(INTEGER);
+
+--remove os dados gerados pelos procedures
+TRUNCATE TABLE locacoes, clientes, funcionarios, veiculos CASCADE;
+
 -- Procedure para gerar clientes
 CREATE OR REPLACE PROCEDURE gerar_clientes(qtd INTEGER)
 LANGUAGE plpgsql
