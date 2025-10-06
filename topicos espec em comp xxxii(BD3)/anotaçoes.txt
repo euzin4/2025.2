@@ -63,9 +63,19 @@ FROM ranked_salarios
 WHERE rank <= 3;
 
 
--funçoes: também podem ser chamadas de procedures
+-funçoes: podem ser procedures ou functions, um retorna algo o outro só executa sem retorno
 
 02/10/25
 -banco de dados distribuidos:
 bancos sincronos e assincronos
 +consultas olap e oltp
+
+06/10/25
+-window function
+exemplo: 
+select *
+    , max(c.num_filhos) over (t)
+    , avg(c.num_filhos) over (t)
+    , rank() over (order by c.num_filhos desc, nome)
+from clientes c 
+window t as (partition by c.estado_civil);
