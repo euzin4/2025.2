@@ -68,6 +68,7 @@ WHERE rank <= 3;
 02/10/25
 -banco de dados distribuidos:
 bancos sincronos e assincronos
+o ACID é o maior problema de sistemas sincronos ja que a sincronia\conexao entre os servidores normalmente é o gargalo do sistema
 +consultas olap e oltp
 
 06/10/25
@@ -79,3 +80,8 @@ select *
     , rank() over (order by c.num_filhos desc, nome)
 from clientes c 
 window t as (partition by c.estado_civil);
+
+09/10/25
+-continuação banco de dados distribuidos
+-big data
+-teorema CAP(erik brewer). consistency, availability, partitioning.
