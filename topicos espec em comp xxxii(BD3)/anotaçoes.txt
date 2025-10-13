@@ -84,4 +84,12 @@ window t as (partition by c.estado_civil);
 09/10/25
 -continuação banco de dados distribuidos
 -big data
--teorema CAP(erik brewer). consistency, availability, partitioning.
+#teorema CAP(erik brewer). consistency, availability, partitioning.
+-ACID é pra BD relacional, CAP é pra BD NoSQL (acho)
+
+13/10/25
+-sistemas NoSQL
+exemplos: redis(modelo chave-valor), cassandra(orientado a colunas, usa linguagem propria(CQL)), mongo, neo4j, voldemort, couchDB
+-diferente dos bancos relacionais que tem um padrao de funcionamento, os bancos NoSQL funcionam cada um da sua proria forma e com linguagens diferentes
+-BD NoSQL não é recomendado se for necessario o uso de relacionamento(join) entre dados
+-existem modelos chave-valor, orientado a colunas, orientado a documentos, orientado a grafos
