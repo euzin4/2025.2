@@ -1,0 +1,11 @@
+Car*s alun*s, como atividade remota correspondente aos dias letivos 10 e 17 de outubro realizem a seguinte atividade de implementação (a ser submetida até o dia 20/10, via sigaa):
+Empregando semáforos, resolva o seguinte problema (em linguagem C no Linux):
+- A partir de uma thread principal criar 3 threads;
+- Cada thread executa, basicamente, a mesma tarefa, que consiste em incrementar uma variável global inicializada com zero; no entanto, a cada rodada, cada thread incrementa a variável global apenas uma vez. Além disso, a alternância entre as threads ocorre sempre em ordem crescente de identificadores. Assumir identificadores das threads incrementais, iniciando-se a primeira thread com ID = 0. 
+Exemplo: assumindo-se que  as 3 threads tem IDs 0, 1 e 2, ter-se-á a seguinte apresentação de incremento da variável global:
+- thread 0: global = 1;
+- thread 1: global = 2;
+- thread 2: global = 3;
+- thread 0: global = 4;
+- thread 1: global = 5;
+Defina um valor de parada para o valor global.
