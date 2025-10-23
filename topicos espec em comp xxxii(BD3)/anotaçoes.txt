@@ -93,3 +93,12 @@ exemplos: redis(modelo chave-valor), cassandra(orientado a colunas, usa linguage
 -diferente dos bancos relacionais que tem um padrao de funcionamento, os bancos NoSQL funcionam cada um da sua proria forma e com linguagens diferentes
 -BD NoSQL não é recomendado se for necessario o uso de relacionamento(join) entre dados
 -existem modelos chave-valor, orientado a colunas, orientado a documentos, orientado a grafos
+
+23/10/25
+#bancos relacionais se adaptam para varios propositos, ja nos NoSql existem bancos especificos para objetivos especificos, dentre eles existem:
+-modelo orientado a documentos
++pesquisar OLTP e OLAP
+-modelo orientado a coluna
+-modelo orientado a agregados
+-modelo orientado a grafos
+-BD chave-valor
