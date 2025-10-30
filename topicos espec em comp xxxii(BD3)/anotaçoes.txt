@@ -104,4 +104,4 @@ exemplos: redis(modelo chave-valor), cassandra(orientado a colunas, usa linguage
 -BD chave-valor
 
 30/10/25
--mais sobre modelos orientados a coluna
+-mais sobre modelos orientados a chave-valor e coluna
