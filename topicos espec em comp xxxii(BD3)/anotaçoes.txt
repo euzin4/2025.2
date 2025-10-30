@@ -102,3 +102,6 @@ exemplos: redis(modelo chave-valor), cassandra(orientado a colunas, usa linguage
 -modelo orientado a agregados
 -modelo orientado a grafos
 -BD chave-valor
+
+30/10/25
+-mais sobre modelos orientados a coluna
