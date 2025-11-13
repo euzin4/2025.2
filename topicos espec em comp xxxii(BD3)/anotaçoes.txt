@@ -112,4 +112,5 @@ exemplos: redis(modelo chave-valor), cassandra(orientado a colunas, usa linguage
 -DOM x SAX
 -DOM le os dados de um arquivo e monta em formato de arvore, é bom para arquivos pequenos ja que todo o arquivo tem que sem armazenado na memoria
 -SAX le os dados sequencialmente linha a linha, é bom para grandes arquivos ja que pode carregar os dados parcialmente na memoria
--instalar mongo com docker(light VM): "sudo apt install docker.io", "sudo docker run --name mongo -d mongo", "sudo docker exec -it mongo bash"
+*instalar mongo com docker(light VM): "sudo apt install docker.io", "sudo docker run --name mongo -d mongo", "sudo docker exec -it mongo bash"
++no mongo em um 'find' usar "_id:0" em uma parte da consulta para o _id nao aparecer no resultado ja que ele aparece por padrao
