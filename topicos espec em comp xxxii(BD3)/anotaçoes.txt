@@ -105,3 +105,10 @@ exemplos: redis(modelo chave-valor), cassandra(orientado a colunas, usa linguage
 
 30/10/25
 -mais sobre modelos orientados a chave-valor e coluna
+
+13/11/25
+#BDs orientados a documentos
+-podem ter formato XML,JSON,BSON,entre outros
+-DOM x SAX
+-DOM le os dados de um arquivo e monta em formato de arvore, é bom para arquivos pequenos ja que todo o arquivo tem que sem armazenado na memoria
+-SAX le os dados sequencialmente linha a linha, é bom para grandes arquivos ja que pode carregar os dados parcialmente na memoria
